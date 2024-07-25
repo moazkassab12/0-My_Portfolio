@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    box-sizing: ;
+    transition: .7s ease;
+}
+
+:root {
+    --centercolor: #e0e0e0c2;
+    --mastercolor: #000a8fe5;
+    --sub1color: #921212de;
+    --sub2collor: #4b4b4bd9;
+}
+
+html {
+    /* scroll-behavior: smooth; */
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 374px) {
+    body {
+        font-size: 3px;
+    }
+}
+
+@media (min-width: 375px) and (max-width:424px) {
+    body {
+        font-size: 3.5385px;
+    }
+}
+
+@media (min-width: 425px) and (max-width:767px) {
+    body {
+        font-size: 4.45624px;
+    }
+}
+
+@media (min-width: 768px) and (max-width:1023px) {
+    body {
+        font-size: 6.2px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width:1439px) {
+    body {
+        font-size: 7px;
+    }
+}
+
+@media (min-width: 1440px) and (max-width:2559px) {
+    body {
+        font-size: 9px;
+    }
+}
+
+@media (min-width: 2560px) {
+    body {
+        font-size: 15px;
+    }
+}
+
+header {
+    width: 100%;
+    background-color: var(--centercolor);
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 10em 1em 20em;
+}
+
+.logo {
+    text-decoration: none;
+    color: var(--mastercolor);
+    font-weight: 700;
+    font-size: 3.25em;
+}
+
+.navication a {
+    text-decoration: none;
+    color: var(--mastercolor);
+    font-weight: 500;
+    font-size: 2em;
+    padding-left: 3em;
+}
+
+.navication a:hover {
+    color: var(--sub1color);
+    transition: .5s;
+}
+
+section {
+    padding: 10em 15em;
+}
+
+.sec1-main {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--mastercolor);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.sec1-main h2 {
+    font-weight: 300;
+    display: block;
+    color: var(--centercolor);
+    font-size: 2.2em;
+}
+
+.sec1-main h2 span {
+    display: inline-block;
+    font-weight: 800;
+    font-size: 3.75em;
+    color: var(--centercolor);
+    margin-bottom: 0.3em;
+}
+
+.sec1-main h3 {
+    display: block;
+    font-weight: 500;
+    font-size: 2.8em;
+    color: var(--centercolor);
+    letter-spacing: .025em;
+}
+
+.sec1-main .main-btn {
+    margin: 2em 0.3em 2em;
+    background-color: var(--centercolor);
+    color: var(--mastercolor);
+    text-decoration: none;
+    border-radius: 1em;
+    padding: 0.8em 1.45em;
+    font-weight: 600;
+    font-size: 2em;
+}
+
+.sec1-main .main-btn:hover {
+    transform: scale(1.1);
+    color: var(--sub1color);
+}
+
+.sec1-main .social-icons a {
+    color: var(--centercolor);
+    margin-right: 1em;
+    font-size: 3.2em;
+    transition: linear;
+}
+
+.sec1-main .social-icons a:hover {
+    color: var(--sub2collor);
+}
+
+.sec2-myskills {
+    background-color: var(--centercolor);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec2-myskills h2 {
+    color: var(--mastercolor);
+    font-weight: 600;
+    font-size: 3.2em;
+    letter-spacing: .05em;
+}
+
+.cards-skills {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card-skill {
+    background-color: var(--mastercolor);
+    color: var(--centercolor);
+    margin: 3em;
+    padding: 2em 2.5em;
+    box-shadow: 0em 0em 3em var(--sub2collor);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 32em;
+    height: 48em;
+}
+
+.card-skill:hover {
+    transform: scale(1.05);
+    background-color: var(--sub1color);
+}
+
+.card-skill .icon {
+    font-size: 16em;
+    align-self: center;
+    justify-self: start;
+    text-align: center;
+}
+
+.card-skill .info {
+    text-align: center;
+}
+
+.card-skill h3 {
+    font-size: 2.1em;
+    font-weight: 500;
+    letter-spacing: .04em;
+    margin-bottom: 1em;
+}
+
+.card-skill p {
+    letter-spacing: .02em;
+    text-align: center;
+    font-size: 1.75em;
+    font-weight: 400;
+    margin-bottom: 2.5em;
+}
+
+.sec3-projects {
+    background-color: var(--sub2collor);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec3-projects h2 {
+    color: var(--mastercolor);
+    font-weight: 600;
+    font-size: 3.2em;
+    text-shadow: .5em .5em 2em rgba(150, 150, 150, 0.9);
+    letter-spacing: .05em;
+}
+
+.sec3-projects .projects-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.sec3-projects .project-card {
+    width: 44em;
+    height: 35em;
+    background-color: var(--centercolor);
+    border-radius: 1em;
+    margin: 9em 1.5em 1.5em 1.5em;
+    box-shadow: 0em 0em 1em var(--centercolor);
+}
+
+.sec3-projects .project-card:hover {
+    transform: scale(1.07);
+}
+
+.project-card .img-card img {
+    width: 100%;
+    margin: 0em;
+    padding: 0em;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 0em;
+    border-bottom-left-radius: 0em;
+}
+
+.project-card .capition-card p {
+    font-size: 1.6em;
+    font-weight: 400;
+    margin: 1em 2.5em .5em;
+    color: var(--sub2collor);
+}
+
+.project-card .capition-card h3 {
+    font-size: 2.25em;
+    font-weight: 700;
+    color: var(--mastercolor);
+    margin: .5em 3em;
+}
+
+.project-card:hover .capition-card h3 {
+    color: var(--sub1color);
+}
+
+.project-card-a {
+    text-decoration: none;
+}
+
+.sec4-contact {
+    background-color: var(--centercolor);
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.sec4-contact h2 {
+    color: var(--mastercolor);
+    font-weight: 600;
+    font-size: 3.2em;
+    text-shadow: .5em .5em 2em rgba(150, 150, 150, 0.9);
+    letter-spacing: .05em;
+}
+
+.sec4-contact .contact-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.contact-cards .contact-card {
+    width: 32em;
+    height: 24em;
+    background-color: var(--mastercolor);
+    border-radius: 1em;
+    margin: 9em 1.5em 1.5em 1.5em;
+    box-shadow: 0em 0em 1em var(--sub2collor);
+    color: var(--centercolor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-card:hover {
+    transform: scale(1.1);
+    background-color: var(--sub1color);
+}
+
+.contact-card i {
+    font-size: 11em;
+    text-align: center;
+}
+
+.contact-card h3 {
+    margin-top: .5em;
+    font-size: 1.75em;
+}
+
+.contact-card p {
+    font-size: 1.9em;
+}
+
+footer {
+    width: 100%;
+    min-height: 10vh;
+    background-color: var(--mastercolor);
+    color: var(--centercolor);
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5em 2.5em;
+}
+
+footer p {
+    font-weight: 400;
+    font-size: 2em;
+}
+
+footer .social-icons {
+    font-size: 3.2em;
+}
+
+footer .social-icons a {
+    color: var(--centercolor);
+    margin-right: 1em;
+    transition: linear;
+}
+
+footer .social-icons a:hover {
+    color: var(--sub2collor);
+}
+
+footer p a {
+    text-decoration: none;
+    color: var(--centercolor);
+    font-weight: 700;
+    font-size: 1.65em;
+    padding: .1em;
+}
